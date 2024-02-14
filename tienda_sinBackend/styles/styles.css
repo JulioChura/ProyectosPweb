@@ -29,9 +29,7 @@ p {
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--blanco);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2.5rem;
+  
 }
 
 a {
@@ -130,7 +128,9 @@ caso se selecciona el ultimo*/
 }
 
 .producto__informacion {
-
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .producto_nombre {
@@ -173,4 +173,51 @@ caso se selecciona el ultimo*/
     grid-row: 5/6;
     grid-column: 2/4;
   }
+}
+
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+
+.nosotros__imagen {
+  grid-row: 1/2;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen {
+      grid-column: 2/3;
+    }
+}
+
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .bloques {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque {
+  text-align: center;
+}
+
+.bloque__titulo {
+  margin: 0;
+}
+
+.bloque__imagen {
+  width: 100%;
 }
