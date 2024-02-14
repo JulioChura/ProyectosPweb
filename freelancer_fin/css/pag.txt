@@ -1,0 +1,2 @@
+* caniuse.com: para ver que navegadores soportan ciertas caracteristicas de caracteristicas
+* https://www.cssmatic.com/box-shadow : Para dar sombras
