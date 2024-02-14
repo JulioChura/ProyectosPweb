@@ -68,12 +68,24 @@ h3 {
   margin: 3rem 0;
 }
 
+.footer {
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  margin-top: 2rem;;
+}
+
+.footer__texto {
+  font-family: var(--fuentePrincipal);
+  font-size: 2.2rem;
+  text-align: center;
+}
+
 .navegacion {
   background-color: var(--primarioOscuro);
   padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; /* Separacion nueva--margin-rigth: 2rem; */
 }
 
 .navegacion__enlace {
@@ -81,6 +93,13 @@ h3 {
   color: var(--blanco);
   font-size: 3rem;
 }
+
+/*El last-of-type se usa cuanod tenemos classes con el mismo nombre, en este
+caso se selecciona el ultimo*/
+.navegacion__enlace:last-of-type {
+  margin-right: 0;
+}
+
 
 .navegacion__enlace:hover,
 .navegacion__enlace--activo {
