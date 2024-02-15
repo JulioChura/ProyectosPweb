@@ -63,6 +63,10 @@ h3 {
   font-size: 2.4rem;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -190,7 +194,6 @@ caso se selecciona el ultimo*/
 
 .nosotros__imagen {
   grid-row: 1/2;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -218,6 +221,46 @@ caso se selecciona el ultimo*/
   margin: 0;
 }
 
-.bloque__imagen {
-  width: 100%;
+@media (min-width: 768px) {
+  .camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+}
+
+.formulario__submit {
+  background-color: var(--secundario);
+  font-size: 2rem;
+  border: none;
+  text-transform: uppercase;
+  padding: 2rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.3s ease; /*ease es el tipo de animacion*/
+  grid-column: 1 / 3;
+}
+
+.formulario__submit:hover {
+  cursor:pointer;
+  background-color: var(--secundarioOscuro);
+}
+
+.formulario__campo {
+  border-color: var(--primarioOscuro);
+  background-color: var(--primario);
+  border-width: 1rem;
+  border-style: solid;
+  color: var(--blanco);
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  appearance: none; /*quitar la flecha del menu de opciones del select*/
 }
