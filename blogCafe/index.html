@@ -7,8 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,700;1,600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="styles/normalize.css" as="style">
     <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,700;1,600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&display=swap" as="font"  crossorigin="crossorigin">
+    
+    <link rel="preload" href="styles/styles.css" as="style">
     <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
     <header class="header">
@@ -38,8 +48,12 @@
         <main class="blog">
             <h3>Nuestro Blog</h3>
             <article class="entrada">
+                
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="blog1">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                    </picture>
+                    <img loading="lazy" src="img/blog1.jpg" alt="blog1">
                 </div>
 
                 <div class="entrada__contenido">
@@ -53,7 +67,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="blog1">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                    </picture>
+                    <img loading="lazy" src="img/blog2.jpg" alt="blog1">
                 </div>
 
                 <div class="entrada__contenido">
@@ -67,7 +84,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="blog1">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                    </picture>
+                    <img loading="lazy" src="img/blog3.jpg" alt="blog1">
                 </div>
 
                 <div class="entrada__contenido">
@@ -118,5 +138,6 @@
             </div>
         </div>
     </footer>
+    <script slot="js/modernizr.js"></script>
 </body>
 </html>

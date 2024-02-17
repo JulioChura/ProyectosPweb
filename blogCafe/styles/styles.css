@@ -161,6 +161,7 @@ img {
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
+    border: none
 }
 
 @media (min-width: 768px){
@@ -169,6 +170,10 @@ img {
         margin: 0 auto;
         margin-bottom: 2rem;
     }
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .boton--primario {
@@ -256,4 +261,45 @@ img {
 .curso__label,
 .curso__info {
     font-size: 2rem;
+}
+
+/*contacto*/
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto; 
+    width: 90%;
+    padding: 5rem;
+    
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem
+    
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    font-weight: bold;
+   
+    
+}
+
+.campo__field {
+    flex: 1;  /*como campo__label tiene como factor de  crecimiento cero, el campo__field por su factor de crecimiento de 1 abarca el espacio disponible */
+    border: 1px solid var(--claro);
+}
+
+.campo__field--textarea{
+    height: 20rem;
 }
