@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(../img/fondo.png);
+    background-color: rgb(37, 142, 188);
+}
+
+input {
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contenedor {
+    max-width: 60rem;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;   
+    margin-top: 4rem;
+}
+
+.contenedor__titulo {
+    background-color: rgb(39, 39, 129);
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenedor__display {
+    background-color: white;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor__agregar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    
+}
+
+.agregar__texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding-bottom: 1.5rem;
+}
+
+.agregar__boton {
+    color: white;
+    background-color: rgb(11, 11, 160);
+    border-radius: 50%;
+    border: 0.2rem solid black;
+    font-weight: 700;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.agregar__boton:hover {
+    background-color: rgb(6, 6, 84);
+}
