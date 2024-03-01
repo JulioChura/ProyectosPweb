@@ -5,56 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación Presupuesto</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/estilos.css" rel='stylesheet'/>
 </head>
 <body onload="cargarApp()">
     
     <header class="cabecera">
         <h1 class="cabecera__titulo">Presupuesto Disponible</h1>
-        <div class="cabecera__">
-            <span>$</span>
-            <h2>2,300.00</h2>
+        <div class="cabecera__monto">
+            <h2>$ </h2>
+            <h2> 2,300.00</h2>
         </div>
 
-        <div class="cabecera__ingresos" >
+        <div class="cabecera__ingresos no-margin" >
             <div class="ingresos__letra">
                 <h3>Ingresos</h3>
-            </div>
-            <div class="ingresos__datos">    
-                <span>$</span>
-                <h3 class="ingresos__cantidad"> 3,600.00 </h3>
-            </div>
+            </div> 
+            <h3 class="ingresos__cantidad"> $ 3,600.00 </h3>
         </div>
 
-        <div class="cabecera__egresos" >
+        <div class="cabecera__egresos no-margin" >
             <div class="egresos__letra">
                 <h3>Egresos</h3>
             </div>
-            <div class="egresos__datos">    
-                <span>$</span>
-                <h3 class="egresos__cantidad"> 3,600.00 </h3>
-            </div>
-   
+            <h3 class="egresos__cantidad">$ 3,600.00 </h3>
+        </div>
     </header>
 
     
-    <div class="contenedorAgregar">
-        <select name="tipo" id="tipo" class="contenedorAgregar__opciones">
-            <option disabled selected>-Acción-</option>
-            <option value="egreso">Egreso</option>
-            <option value="ingreso">Ingreso</option>
-        </select>
-
-        <input type="text" class="contenedorAgregar__input" placeholder="Agregar descripción">
-        <input type="number" class="contenedorAgregar__input" placeholder="Valor">
-        <button class="contenedorAgregar__boton">✓</button>
+    <div class="contenedor">
+        <div class="contenedor__agregar">
+            <select name="tipo" id="tipo" class="contenedorAgregar__opciones">
+                <option disabled selected>-Acción-</option>
+                <option value="egreso">Egreso</option>
+                <option value="ingreso">Ingreso</option>
+            </select>
+            <input type="text" class="contenedorAgregar__input" placeholder="Agregar descripción">
+            <input type="number" class="contenedorAgregar__input" placeholder="Valor">
+            <button class="contenedorAgregar__boton">✓</button>
+        </div>
+        
     </div>
     
 
 
     <main class="informacion">
         <div class="informacion__ingresos">
-            <table class="informacion__ingresos___tabla">
+            <table class="informacion__ingresos___tabla tabla">
                 <tr class="tabla__cabecera">
                     <th>Ingresos</th>
                 </tr>
@@ -62,8 +59,8 @@
             </table>
         </div>
 
-        <div class="informacion__egresos">
-            <table class="informacion__egresos___tabla">
+        <div class="informacion__egresos tabla">
+            <table class="informacion__egresos___tabla tabla" >
                 <tr class="tabla__cabecera">
                     <th>Egresos</th>
                 </tr>
