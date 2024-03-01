@@ -8,50 +8,69 @@
     <link href="css/estilos.css" rel='stylesheet'/>
 </head>
 <body onload="cargarApp()">
-    <div class="cabecero">
-        <div class="presupuesto">
-            <div>
-                <h1 class="presupuesto_titulo">Presupuesto Disponible</h1>
-            </div> <!--Nombre de la pagina o h1 -->
-
-            <div class="presupuesto_valor">
-                <p  id="presupuesto">+ 2,000.00</p>
-            </div> <!--Presupuesto total-->
-
-            <div class="presupuesto_ingreso limpiarEstilos">
-
-                <div class="presupuesto_ingreso--texto" id="presupuesto">
-                    <p> Ingresos</p>
-                </div>
-
-                <div class="derecha">
-                    <div class="presupuesto_ingreso--valor" id="ingresos"> 
-                        <p>+4,100.00</p>
-                    </div>
-
-                    <div class="presupuesto_ingreso--porcentaje">  &nbsp;
-                    </div>
-                </div>
-            </div> <!--Ingresos-->
-
-            <div class="presupuesto_egreso limpiarEstilos">
-
-                <div class="presupuesto_egreso--texto" id="egresos">
-                    <p> Egresos</p>
-                </div>
-
-                <div class="derecha limpiarEstilos">
-                    <div class="presupuesto_egreso--valor"> 
-                        <p>.1900.00</p>
-                    </div>
-
-                    <div class="presupuesto_egreso--porcentaje" id="porcentajes">  <p>45%</p>
-                    </div>
-                </div>
-            </div> <!--Egresos-->
-
+    
+    <header class="cabecera">
+        <h1 class="cabecera__titulo">Presupuesto Disponible</h1>
+        <div class="cabecera__">
+            <span>$</span>
+            <h2>2,300.00</h2>
         </div>
+
+        <div class="cabecera__ingresos" >
+            <div class="ingresos__letra">
+                <h3>Ingresos</h3>
+            </div>
+            <div class="ingresos__datos">    
+                <span>$</span>
+                <h3 class="ingresos__cantidad"> 3,600.00 </h3>
+            </div>
+        </div>
+
+        <div class="cabecera__egresos" >
+            <div class="egresos__letra">
+                <h3>Egresos</h3>
+            </div>
+            <div class="egresos__datos">    
+                <span>$</span>
+                <h3 class="egresos__cantidad"> 3,600.00 </h3>
+            </div>
+   
+    </header>
+
+    
+    <div class="contenedorAgregar">
+        <select name="tipo" id="tipo" class="contenedorAgregar__opciones">
+            <option disabled selected>-Acción-</option>
+            <option value="egreso">Egreso</option>
+            <option value="ingreso">Ingreso</option>
+        </select>
+
+        <input type="text" class="contenedorAgregar__input" placeholder="Agregar descripción">
+        <input type="number" class="contenedorAgregar__input" placeholder="Valor">
+        <button class="contenedorAgregar__boton">✓</button>
     </div>
+    
+
+
+    <main class="informacion">
+        <div class="informacion__ingresos">
+            <table class="informacion__ingresos___tabla">
+                <tr class="tabla__cabecera">
+                    <th>Ingresos</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="informacion__egresos">
+            <table class="informacion__egresos___tabla">
+                <tr class="tabla__cabecera">
+                    <th>Egresos</th>
+                </tr>
+
+            </table>
+        </div>
+    </main>
 
     <script src='js/Dato.js'></script>
     <script src='js/Ingreso.js'></script>
