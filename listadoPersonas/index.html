@@ -14,25 +14,23 @@
         </div>
 
         <div class="contenedor__display">
-            <ul>
-                <li>
-                    Lista
+            <ul id="elementos">
+                <li id="borrarElemento">
+                    Aqui apareceran los nombres
                 </li>
 
-                <li>
-                    Lista
-                </li>
             </ul>
         </div>
 
         <div class="contenedor__agregar">
-            <button class="agregar__boton">+</button>
+            <button class="agregar__boton" id="agregar">+</button>
             <div class="agregar__texto">
-                <input type="text" placeholder="Nombre" >
-                <input type="text" placeholder="Apellido">
+                <input type="text" placeholder="Nombre" id="nombre" value="">
+                <input type="text" placeholder="Apellido" id="apellido" value="">
             </div>
             
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

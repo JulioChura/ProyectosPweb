@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Presupuesto</title>
+    <link href="css/estilos.css" rel='stylesheet'/>
+</head>
+<body onload="cargarApp()">
+    <div class="cabecero">
+        <div class="presupuesto">
+            <div>
+                <h1 class="presupuesto_titulo">Presupuesto Disponible</h1>
+            </div> <!--Nombre de la pagina o h1 -->
+
+            <div class="presupuesto_valor">
+                <p  id="presupuesto">+ 2,000.00</p>
+            </div> <!--Presupuesto total-->
+
+            <div class="presupuesto_ingreso limpiarEstilos">
+
+                <div class="presupuesto_ingreso--texto" id="presupuesto">
+                    <p> Ingresos</p>
+                </div>
+
+                <div class="derecha">
+                    <div class="presupuesto_ingreso--valor" id="ingresos"> 
+                        <p>+4,100.00</p>
+                    </div>
+
+                    <div class="presupuesto_ingreso--porcentaje">  &nbsp;
+                    </div>
+                </div>
+            </div> <!--Ingresos-->
+
+            <div class="presupuesto_egreso limpiarEstilos">
+
+                <div class="presupuesto_egreso--texto" id="egresos">
+                    <p> Egresos</p>
+                </div>
+
+                <div class="derecha limpiarEstilos">
+                    <div class="presupuesto_egreso--valor"> 
+                        <p>.1900.00</p>
+                    </div>
+
+                    <div class="presupuesto_egreso--porcentaje" id="porcentajes">  <p>45%</p>
+                    </div>
+                </div>
+            </div> <!--Egresos-->
+
+        </div>
+    </div>
+
+    <script src='js/Dato.js'></script>
+    <script src='js/Ingreso.js'></script>
+    <script src='js/Egreso.js'></script>
+    <script src='js/app.js'></script>
+</body>
+</html>
